@@ -1,9 +1,34 @@
+:root {
+  --blue: blue;
+  --gray: gray;
+}
+
 html,
 body {
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  cursor: default;
+}
+
+h1, h2, h3, h4 {
+  display: inline;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  line-height: 1.15;
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
 }
 
 a {
@@ -13,4 +38,8 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+*:focus {
+  outline: none;
 }
