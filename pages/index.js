@@ -1,11 +1,15 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import Link from 'next/link'
 import React, { useState, useEffect } from 'react'
 
 import styles from '../styles/Home.module.css'
 import avatar from '../public/avatar.jpg'
 import { IoMenuSharp } from 'react-icons/io5'
 import { IoCloseSharp } from 'react-icons/io5'
+import VideoPlayer from './components/VideoPlayer'
+import Options from './components/Options'
+import Notifications from './components/Notifications'
 
 export default function Home() {
 
@@ -38,11 +42,16 @@ export default function Home() {
 
           <div className={styles.chatContainer}>
             Chat Container
+            <VideoPlayer />
+            <Options>
+              
+            </Options>
+            <Notifications />
           </div>
 
           <header className={styles.header}>
             <div className={styles.title}>
-              <h1><a href="/">Videophone</a></h1>
+              <h1><Link href="/">Videophone</Link></h1>
               { isMenuOpen 
                 ? <IoCloseSharp onClick={toggleMenu} className={styles.menuButton} /> 
                 : <IoMenuSharp onClick={toggleMenu} className={styles.menuButton} /> 

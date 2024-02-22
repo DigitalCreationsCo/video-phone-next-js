@@ -92,7 +92,6 @@
 .chatContainer {
   position: absolute;
   top: 0;
-  border: solid 2px;
   display: flex;
   flex: 1;
   flex-grow: 1;
